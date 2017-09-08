@@ -201,6 +201,53 @@ sqldf(query)</code></pre>
 ## 34  mayswi01   1955    NY1 51
 ## 35 fieldce01   1990    DET 51
 ## 36 jonesan01   2005    ATL 51</code></pre>
+<pre class="r"><code>query&lt;-&quot;SELECT playerID,yearID,teamID,HR FROM Batting
+WHERE HR&gt;=50&quot;
+
+sqldf(query)</code></pre>
+<pre><code>##     playerID yearID teamID HR
+## 1   ruthba01   1920    NYA 54
+## 2   ruthba01   1921    NYA 59
+## 3   ruthba01   1927    NYA 60
+## 4   ruthba01   1928    NYA 54
+## 5  wilsoha01   1930    CHN 56
+## 6   foxxji01   1932    PHA 58
+## 7   foxxji01   1938    BOS 50
+## 8  greenha01   1938    DET 58
+## 9  kinerra01   1947    PIT 51
+## 10  mizejo01   1947    NY1 51
+## 11 kinerra01   1949    PIT 54
+## 12  mayswi01   1955    NY1 51
+## 13 mantlmi01   1956    NYA 52
+## 14 mantlmi01   1961    NYA 54
+## 15 marisro01   1961    NYA 61
+## 16  mayswi01   1965    SFN 52
+## 17 fostege01   1977    CIN 52
+## 18 fieldce01   1990    DET 51
+## 19 belleal01   1995    CLE 50
+## 20 anderbr01   1996    BAL 50
+## 21 mcgwima01   1996    OAK 52
+## 22 griffke02   1997    SEA 56
+## 23 griffke02   1998    SEA 56
+## 24 mcgwima01   1998    SLN 70
+## 25  sosasa01   1998    CHN 66
+## 26 vaughgr01   1998    SDN 50
+## 27 mcgwima01   1999    SLN 65
+## 28  sosasa01   1999    CHN 63
+## 29  sosasa01   2000    CHN 50
+## 30 bondsba01   2001    SFN 73
+## 31 gonzalu01   2001    ARI 57
+## 32 rodrial01   2001    TEX 52
+## 33  sosasa01   2001    CHN 64
+## 34 rodrial01   2002    TEX 57
+## 35 thomeji01   2002    CLE 52
+## 36 jonesan01   2005    ATL 51
+## 37 howarry01   2006    PHI 58
+## 38 ortizda01   2006    BOS 54
+## 39 fieldpr01   2007    MIL 50
+## 40 rodrial01   2007    NYA 54
+## 41 bautijo02   2010    TOR 54
+## 42 davisch02   2013    BAL 53</code></pre>
 </div>
 
 
